@@ -9,16 +9,15 @@ I also realigned ses-test and ses-retest together. The mask image for the extra 
 
 #### Python
 
-In my code, first load the labels, ses-test and ses-retest data and their corresponding masks. Then apply the masks and run k-fold cross validation on two datasets separately. Here, I choose the value of k is 5.
-For the feature selection, the value of n_component I choosing for PCA is 90.
+In my code, first load the labels, ses-test and ses-retest data and their corresponding masks. Masks that have dimension 64x64x30 are applied to each image so that we can extract 184 features and store them in a 1-D array. Then I run k-fold cross validation on two datasets separately. Here, I choose the value of k is 5.
+For the feature selection, the value of n_component I choosing for PCA is 90 (has the best accuracy result).
 
 ## Results
 
 For ses-test the best accuracy (only SVM) is 0.9459; the best accuracy (PCA + SVM) is 0.9189.
 For ses-retest the best accuracy (only SVM) is 0.8918; the best accuracy (PCA + SVM) is 0.9166.
 For extra credit, I only apply SVM and the best accuracy (only SVM) is 0.5108.
-
-https://github.com/xinyiwang23/5293hw3/blob/main/img.png
+![image](https://github.com/xinyiwang23/5293hw3/blob/main/img.png)
 
 ## Limitation and Improve
 
