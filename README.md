@@ -18,6 +18,8 @@ For ses-test the best accuracy (only SVM) is 0.9459; the best accuracy (PCA + SV
 For ses-retest the best accuracy (only SVM) is 0.8918; the best accuracy (PCA + SVM) is 0.9166.
 For extra credit, I only apply SVM and the best accuracy (only SVM) is 0.5108.
 
+https://github.com/xinyiwang23/5293hw3/blob/main/img.png
+
 ## Limitation and Improve
 
 Although the accuracy of two dataset with both PCA and SVM are similar, the accuracy of ses-retest data is not as good as the ses-test data (89% vs 94% without PCA). I think one way is to using a better masking threshold to improve the result. The other way is choosing a different tissue to apply mask. Also, Grid Search could be applied to obtain better combination of the paremeters. 
